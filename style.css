@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-
 footer{
     position: relative;
     background-color: #010718;
@@ -24,7 +23,6 @@ footer{
     z-index: 4;
     margin-bottom: -50px;
 }
-
 /*----------------------------The Hero Banner----------------------------*/
 .hero_banner{
     position: relative;
