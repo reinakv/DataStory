@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    background-color: #010718;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #eff5f7;
+    z-index: 4;
+    margin-bottom: -50px;
+}
+
+header h2,
+header h3{
+    opacity: 20%;
+}
+
+/*----------------------------The Hero Banner----------------------------*/
+.hero_banner{
+    position: relative;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #010718;
+}
+
+.hero_banner h1,
+.hero_banner span{
+    color: #eff5f7;
+    font-weight: bold;
+}
+
+.hero_banner h1{
+    font-size: 50px;
+}
+
+.hero_banner span{
+    font-size: 30px;
+}
+
+.hero_banner .sec{
+    color: #4070F4;
+    position: relative;
+}
+
+.hero_banner .textbox .text.sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #010718;
+    border-left: 2px solid #4070F4;
+    animation: word 4s steps(17) infinite;
+}
+@keyframes word{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.scrolldown{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+    overflow-x: visible;
+}
+
+.scrolldown span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: scroll 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2){
+    transform: translate(0px, 0px);
+    animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3){
+    transform: translate(15px, 15px);
+    animation-delay: 0s;
+}
+
+@keyframes scroll{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+
+    50%, 100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/*----------------------------Information Section 1----------------------------*/
+.wrapper {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+svg {
+    position: absolute;
+    top: 2em;
+    left: 10vw;
+    width: 50vw;
+
+    .mask {
+        width: 0;
+    }
+}
+
+
+.container {
+    display: flex;
+    width: 300vw;
+}
+
+.container .col {
+    display: flex;
+    gap: 3em;
+}
+
+.container .col p {
+    font-size: .8rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col img{
+    width: 600px;
+}
+
+.container section {
+    width: calc(100vw - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px;
+}
+
+.container section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container section p {
+    font-size: 1.2rem;
+    width: 50vw;
+}
+
+.container section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.container section ul li {
+    background: #eff5f7;
+    border-radius: .3em;
+    flex-grow: 1;
+}
+
+
+/*----------------------------visual1ization Section 1----------------------------*/
+.visual1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #010718;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.visual1 h1,
+.visual1 p {
+    color: #eff5f7;
+    width: 100%;
+}
+
+.contain_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    width: 80%;
+    flex: 1;
+    max-width: 100%;
+}
+
+.contain_2 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+  
+/*----------------------------visual1ization Section 2----------------------------*/
+.visual2 {
+    height: 100vh;
+    background-color: #010718;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.visual2 h1,
+.visual2 p {
+    color: #eff5f7;
+    width: 100%;
+}
+
+.contain_3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    width: 80%;
+    flex: 1;
+    max-width: 100%;
+}
+
+.contain_3 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*----------------------------Information Section 2----------------------------*/
+.wrapper2 {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container2 {
+    display: flex;
+    width: 300vw;
+}
+
+.container2 .col2 {
+    display: flex;
+    gap: 3em;
+}
+
+.container2 .col2 p {
+    font-size: .8rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col2 img{
+    width: 600px;
+}
+
+.container2 section {
+    width: calc(100vw - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px;
+}
+
+.container2 section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container2 section p {
+    font-size: 1.2rem;
+    width: 50vw;
+}
+
+.container2 section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.container2 section ul li {
+    background: #eff5f7;
+    border-radius: .3em;
+    flex-grow: 1;
+}
+
+section {
+    height: 100vh;
+}
+
+/*----------------------------Visual1ization Section 3 and 4----------------------------*/
+.visual3 {
+    height: 100vh;
+    background-color: #010718;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.visual3 h1,
+.visual3 p {
+    color: #eff5f7;
+    width: 100%;
+}
+
+.contain_4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: calc(80% - 180px);
+    flex: 1;
+}
+
+
+.contain_4 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*----------------------------Visual1ization Section 5----------------------------*/
+.visual4 {
+    height: 100vh;
+    background-color: #010718;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.visual4 h1,
+.visual4 p {
+    color: #eff5f7;
+    width: 100%;
+}
+
+.contain_5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex: 1;
+}
+
+.contain_5 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*----------------------------Visual1ization Section 6----------------------------*/
+.visual5 {
+    height: 100vh;
+    background-color: #010718;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.visual5 h1,
+.visual5 p {
+    color: #eff5f7;
+    width: 100%;
+}
+
+.contain_6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    flex: 1;
+}
+
+.contain_6 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*----------------------------Information Section 3----------------------------*/
+.wrapper3 {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container3 {
+    display: flex;
+    width: 300vw;
+}
+
+.container3 .col3 {
+    display: flex;
+    gap: 3em;
+}
+
+.container3 .col3 p {
+    font-size: .8rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.container3 section {
+    width: calc(100vw - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px;
+}
+
+.container3 section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.container3 section p {
+    font-size: 1.2rem;
+    width: 50vw;
+}
+
+.container3 section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+}
+
+.container3 section ul li {
+    background: #eff5f7;
+    border-radius: .3em;
+    flex-grow: 1;
+}
+
+section {
+    height: 100vh;
+}
