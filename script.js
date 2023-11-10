@@ -369,5 +369,3 @@ sections3.forEach((section) => {
     }
   });
 });
-
-
