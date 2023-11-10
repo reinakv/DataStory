@@ -11,7 +11,8 @@ body {
     overflow-x: hidden;
 }
 
-header{
+
+footer{
     position: relative;
     background-color: #010718;
     padding-left: 40px;
@@ -22,11 +23,6 @@ header{
     color: #eff5f7;
     z-index: 4;
     margin-bottom: -50px;
-}
-
-header h2,
-header h3{
-    opacity: 20%;
 }
 
 /*----------------------------The Hero Banner----------------------------*/
